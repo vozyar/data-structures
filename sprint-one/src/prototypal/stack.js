@@ -16,8 +16,8 @@ stackMethods.push = function(value) {
 };
 
 stackMethods.pop = function() {
-	var popped = this.storage[count];
-	delete this.storage[count];
+	var popped = this.storage[this.count - 1];
+	// delete this.storage[count];
 	this.count--;
 	return popped;
 };
